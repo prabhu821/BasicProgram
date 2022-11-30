@@ -7,8 +7,8 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your choice \n1.Flip Coin \n2.Leap Year \n 3.Exit");
-                Console.WriteLine("Enter option to execute");
+                Console.WriteLine("Enter your choice \n1.Flip Coin \n2.Leap Year \n3.Power Of Two \n4.Exit");
+                Console.WriteLine("\nEnter option to execute");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -20,6 +20,10 @@
                         LeapYear leapYear = new LeapYear();
                         leapYear.Year();
                         break;
+                    case 3:
+                        PowerOfTwo power = new PowerOfTwo();
+                        power.Power();
+                        break;
                     default:
                         flag = false;
                         break;
@@ -27,8 +31,7 @@
             }
             
             
-            //PowerOf2s powerOf2 = new PowerOf2s();
-            //powerOf2.PowerOf2();
+            //
             //HarmonicSeries harmonic = new HarmonicSeries();
             //harmonic.Harmonic();
             //PrimeFactor primeFactor = new PrimeFactor();
