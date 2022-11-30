@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your choice \n1.Flip Coin \n2.Leap Year \n3.Power Of Two \n4.Exit");
+                Console.WriteLine("Enter your choice \n1.Flip Coin \n2.Leap Year \n3.Power Of Two \n4.Harmonic Number \n5.Exit");
                 Console.WriteLine("\nEnter option to execute");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -24,6 +24,10 @@
                         PowerOfTwo power = new PowerOfTwo();
                         power.Power();
                         break;
+                    case 4:
+                        HarmonicNumber harmonic = new HarmonicNumber();
+                        harmonic.Harmonic();
+                        break;
                     default:
                         flag = false;
                         break;
@@ -31,9 +35,7 @@
             }
             
             
-            //
-            //HarmonicSeries harmonic = new HarmonicSeries();
-            //harmonic.Harmonic();
+           
             //PrimeFactor primeFactor = new PrimeFactor();
             //primeFactor.Factors();
             //QuotientAndRemainder quotientAndRemainder = new QuotientAndRemainder();
