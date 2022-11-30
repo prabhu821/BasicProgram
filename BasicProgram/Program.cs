@@ -4,9 +4,24 @@
     {
         static void Main(string[] args)
         {
-
-            FlipCoin flipCoin = new FlipCoin();
-            flipCoin.Coin();
+            bool flag = true;
+            while (flag)
+            {
+                Console.WriteLine("\n 1.Flip Coin \n 2.Exit");
+                Console.WriteLine("Enter option to execute");
+                int option = Convert.ToInt32(Console.ReadLine());
+                switch (option)
+                {
+                    case 1:
+                        FlipCoin flipCoin = new FlipCoin();
+                        flipCoin.Coin();
+                        break;
+                    default:
+                        flag = false;
+                        break;
+                }
+            }
+            
             //LeapYears leapYear = new LeapYears();
             //leapYear.LeapYear();
             //PowerOf2s powerOf2 = new PowerOf2s();

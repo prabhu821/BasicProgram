@@ -16,15 +16,12 @@ namespace BasicProgram
         {
             Console.WriteLine("Enter The Value For Number of Flips ");
             int numberofFlip = Convert.ToInt32(Console.ReadLine());
-
             if (numberofFlip > 0)
-
             {
                 for (int i = 0; i < numberofFlip; i++)
                 {
                     Random random = new Random();
                     int number = random.Next(2);
-
                     Console.WriteLine(number);
                     if (number == 0)
                     {
@@ -36,9 +33,7 @@ namespace BasicProgram
                     }
                 }
                 headpercentage = headcount + 100 / numberofFlip;
-
                 tailpercentage = tailcount + 100 / numberofFlip;
-
                 Console.WriteLine("Head Percentage " + headpercentage);
                 Console.WriteLine("Tail Percentage " + tailpercentage);
             }
