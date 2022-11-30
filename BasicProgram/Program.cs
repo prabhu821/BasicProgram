@@ -7,7 +7,8 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your choice \n1.Flip Coin \n2.Leap Year \n3.Power Of Two \n4.Harmonic Number \n5.Factors \n6.Exit");
+                Console.WriteLine("\nEnter your choice \n1.Flip Coin \n2.Leap Year \n3.Power Of Two \n4.Harmonic Number \n5.Factors " +
+                    "\n6.Quotient And Remainder \n7.Exit");
                 Console.WriteLine("\nEnter option to execute");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -32,6 +33,10 @@
                         Factors factor = new Factors();
                         factor.Factor();
                         break;
+                    case 6:
+                        QuotientAndRemainder quotientAndRemainder = new QuotientAndRemainder();
+                        quotientAndRemainder.FindValue();
+                        break;
                     default:
                         flag = false;
                         break;
@@ -41,8 +46,7 @@
             
            
             
-            //QuotientAndRemainder quotientAndRemainder = new QuotientAndRemainder();
-            //quotientAndRemainder.Divider();
+            
             //SwapNumber swapNumber = new SwapNumber();
             //swapNumber.Swap();
             //EvenorOdd evenorOdd = new EvenorOdd();
