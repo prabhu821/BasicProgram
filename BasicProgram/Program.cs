@@ -8,7 +8,7 @@
             while (flag)
             {
                 Console.WriteLine("\nEnter your choice \n1.Flip Coin \n2.Leap Year \n3.Power Of Two \n4.Harmonic Number \n5.Factors " +
-                    "\n6.Quotient And Remainder \n7.SwapTwoNumbers \n8.Enen Or Odd \n9.\n10.\n11.\n12.Exit");
+                    "\n6.Quotient And Remainder \n7.SwapTwoNumbers \n8.Enen Or Odd \n9.Vowel or Consonant \n10.\n11.Exit");
                 Console.WriteLine("\nEnter option to execute");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -46,10 +46,10 @@
                         evenorOdd.EvenOdd();
                         break;
                     case 9:
+                        VowelOrConsonant vowelorConsonant = new VowelOrConsonant();
+                        vowelorConsonant.VowelorConsonant();
                         break;
                     case 10:
-                        break;
-                    case 11:
                         break;
                     default:
                         flag = false;
@@ -63,8 +63,7 @@
             
             
             
-            //VowelsorConsonants vowelsorConsonants = new VowelsorConsonants();
-            //vowelsorConsonants.VowelorConsonant();
+            
             //LargestNumber largestNumber = new LargestNumber();
             //largestNumber.LargeNumber();
         }
