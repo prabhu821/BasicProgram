@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\n 1.Flip Coin \n 2.Exit");
+                Console.WriteLine("Enter your choice \n1.Flip Coin \n2.Leap Year \n 3.Exit");
                 Console.WriteLine("Enter option to execute");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -16,14 +16,17 @@
                         FlipCoin flipCoin = new FlipCoin();
                         flipCoin.Coin();
                         break;
+                    case 2:
+                        LeapYear leapYear = new LeapYear();
+                        leapYear.Year();
+                        break;
                     default:
                         flag = false;
                         break;
                 }
             }
             
-            //LeapYears leapYear = new LeapYears();
-            //leapYear.LeapYear();
+            
             //PowerOf2s powerOf2 = new PowerOf2s();
             //powerOf2.PowerOf2();
             //HarmonicSeries harmonic = new HarmonicSeries();
